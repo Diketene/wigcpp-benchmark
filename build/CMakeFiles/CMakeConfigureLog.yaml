@@ -13,28 +13,6 @@ events:
     backtrace:
       - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /home/diketene/.myapps/gcc-16.1.0/bin/gcc 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-      
-      The C compiler identification is GNU, found in:
-        /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/3.31.4/CompilerIdC/a.out
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
@@ -56,342 +34,13 @@ events:
     kind: "try_compile-v1"
     backtrace:
       - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK'
-        
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07795/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_07795.dir/build.make CMakeFiles/cmTC_07795.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK'
-        Building C object CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc   -v -o CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc
-        Target: x86_64-linux-gnu
-        Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 16.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_07795.dir/'
-         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_07795.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -o /tmp/ccUjCXlZ.s
-        GNU C23 (GCC) version 16.1.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 16.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/local/include"
-        ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"
-        ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /home/diketene/.myapps/imagemagick/include/
-         /home/diketene/.myapps/kokkos/include
-         /home/diketene/.myapps/gtest/include/
-         /home/diketene/.myapps/OpenBLAS/include/openblas
-         /opt/intel/oneapi/mkl/latest/include
-         /home/diketene/.myapps/openmpi/include
-         /home/diketene/.myapps/boost/include/
-         /home/diketene/.myapps/eigen/include/eigen3
-         /home/diketene/.myapps/xtensor-blas/include
-         /home/diketene/.myapps/xsimd/include
-         /home/diketene/.myapps/xtensor/include
-         /home/diketene/.myapps/xtl/include
-         /home/diketene/.myapps/cint/include
-         /home/diketene/.myapps/libtorch/include/torch/csrc/api/include
-         /home/diketene/.myapps/libtorch/include
-         /opt/intel/oneapi/tbb/latest/include
-         /home/diketene/.myapps/wigxjpf/include
-         /home/diketene/.myapps/wigcpp/include
-         /home/diketene/.myapps/benchmark/include
-         /home/diketene/.myapps/lua/5.1.4.9/include
-         .
-         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include
-         /home/diketene/.myapps/gcc-16.1.0/include
-         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed
-         /usr/include/x86_64-linux-gnu
-         /usr/include
-        End of search list.
-        Compiler executable checksum: 09da128e04303c352d1771409bcdeeb2
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_07795.dir/'
-         as -v --64 -o CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o /tmp/ccUjCXlZ.s
-        GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
-        COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_07795
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07795.dir/link.txt --verbose=1
-        Using built-in specs.
-        COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc
-        COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper
-        Target: x86_64-linux-gnu
-        Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 16.1.0 (GCC) 
-        COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_07795' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_07795.'
-         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciUUH8V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_07795 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        collect2 version 16.1.0
-        /usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciUUH8V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_07795 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        GNU ld (GNU Binutils for Debian) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_07795' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_07795.'
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc  -v -Wl,-v CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -o cmTC_07795
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/home/diketene/.myapps/imagemagick/include/]
-          add: [/home/diketene/.myapps/kokkos/include]
-          add: [/home/diketene/.myapps/gtest/include/]
-          add: [/home/diketene/.myapps/OpenBLAS/include/openblas]
-          add: [/opt/intel/oneapi/mkl/latest/include]
-          add: [/home/diketene/.myapps/openmpi/include]
-          add: [/home/diketene/.myapps/boost/include/]
-          add: [/home/diketene/.myapps/eigen/include/eigen3]
-          add: [/home/diketene/.myapps/xtensor-blas/include]
-          add: [/home/diketene/.myapps/xsimd/include]
-          add: [/home/diketene/.myapps/xtensor/include]
-          add: [/home/diketene/.myapps/xtl/include]
-          add: [/home/diketene/.myapps/cint/include]
-          add: [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
-          add: [/home/diketene/.myapps/libtorch/include]
-          add: [/opt/intel/oneapi/tbb/latest/include]
-          add: [/home/diketene/.myapps/wigxjpf/include]
-          add: [/home/diketene/.myapps/wigcpp/include]
-          add: [/home/diketene/.myapps/benchmark/include]
-          add: [/home/diketene/.myapps/lua/5.1.4.9/include]
-          add: [.]
-          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
-          add: [/home/diketene/.myapps/gcc-16.1.0/include]
-          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
-        end of search list found
-        collapse include dir [/home/diketene/.myapps/imagemagick/include/] ==> [/home/diketene/.myapps/imagemagick/include]
-        collapse include dir [/home/diketene/.myapps/kokkos/include] ==> [/home/diketene/.myapps/kokkos/include]
-        collapse include dir [/home/diketene/.myapps/gtest/include/] ==> [/home/diketene/.myapps/gtest/include]
-        collapse include dir [/home/diketene/.myapps/OpenBLAS/include/openblas] ==> [/home/diketene/.myapps/OpenBLAS/include/openblas]
-        collapse include dir [/opt/intel/oneapi/mkl/latest/include] ==> [/opt/intel/oneapi/mkl/latest/include]
-        collapse include dir [/home/diketene/.myapps/openmpi/include] ==> [/home/diketene/.myapps/openmpi/include]
-        collapse include dir [/home/diketene/.myapps/boost/include/] ==> [/home/diketene/.myapps/boost/include]
-        collapse include dir [/home/diketene/.myapps/eigen/include/eigen3] ==> [/home/diketene/.myapps/eigen/include/eigen3]
-        collapse include dir [/home/diketene/.myapps/xtensor-blas/include] ==> [/home/diketene/.myapps/xtensor-blas/include]
-        collapse include dir [/home/diketene/.myapps/xsimd/include] ==> [/home/diketene/.myapps/xsimd/include]
-        collapse include dir [/home/diketene/.myapps/xtensor/include] ==> [/home/diketene/.myapps/xtensor/include]
-        collapse include dir [/home/diketene/.myapps/xtl/include] ==> [/home/diketene/.myapps/xtl/include]
-        collapse include dir [/home/diketene/.myapps/cint/include] ==> [/home/diketene/.myapps/cint/include]
-        collapse include dir [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include] ==> [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
-        collapse include dir [/home/diketene/.myapps/libtorch/include] ==> [/home/diketene/.myapps/libtorch/include]
-        collapse include dir [/opt/intel/oneapi/tbb/latest/include] ==> [/opt/intel/oneapi/tbb/latest/include]
-        collapse include dir [/home/diketene/.myapps/wigxjpf/include] ==> [/home/diketene/.myapps/wigxjpf/include]
-        collapse include dir [/home/diketene/.myapps/wigcpp/include] ==> [/home/diketene/.myapps/wigcpp/include]
-        collapse include dir [/home/diketene/.myapps/benchmark/include] ==> [/home/diketene/.myapps/benchmark/include]
-        collapse include dir [/home/diketene/.myapps/lua/5.1.4.9/include] ==> [/home/diketene/.myapps/lua/5.1.4.9/include]
-        skipping relative include dir [.]
-        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
-        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/include] ==> [/home/diketene/.myapps/gcc-16.1.0/include]
-        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/home/diketene/.myapps/imagemagick/include;/home/diketene/.myapps/kokkos/include;/home/diketene/.myapps/gtest/include;/home/diketene/.myapps/OpenBLAS/include/openblas;/opt/intel/oneapi/mkl/latest/include;/home/diketene/.myapps/openmpi/include;/home/diketene/.myapps/boost/include;/home/diketene/.myapps/eigen/include/eigen3;/home/diketene/.myapps/xtensor-blas/include;/home/diketene/.myapps/xsimd/include;/home/diketene/.myapps/xtensor/include;/home/diketene/.myapps/xtl/include;/home/diketene/.myapps/cint/include;/home/diketene/.myapps/libtorch/include/torch/csrc/api/include;/home/diketene/.myapps/libtorch/include;/opt/intel/oneapi/tbb/latest/include;/home/diketene/.myapps/wigxjpf/include;/home/diketene/.myapps/wigcpp/include;/home/diketene/.myapps/benchmark/include;/home/diketene/.myapps/lua/5.1.4.9/include;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include;/home/diketene/.myapps/gcc-16.1.0/include;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK']
-        ignore line: []
-        ignore line: [Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07795/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_07795.dir/build.make CMakeFiles/cmTC_07795.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FkdBmK']
-        ignore line: [Building C object CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/home/diketene/.myapps/gcc-16.1.0/bin/gcc   -v -o CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c c++ fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 16.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_07795.dir/']
-        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_07795.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -o /tmp/ccUjCXlZ.s]
-        ignore line: [GNU C23 (GCC) version 16.1.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /home/diketene/.myapps/imagemagick/include/]
-        ignore line: [ /home/diketene/.myapps/kokkos/include]
-        ignore line: [ /home/diketene/.myapps/gtest/include/]
-        ignore line: [ /home/diketene/.myapps/OpenBLAS/include/openblas]
-        ignore line: [ /opt/intel/oneapi/mkl/latest/include]
-        ignore line: [ /home/diketene/.myapps/openmpi/include]
-        ignore line: [ /home/diketene/.myapps/boost/include/]
-        ignore line: [ /home/diketene/.myapps/eigen/include/eigen3]
-        ignore line: [ /home/diketene/.myapps/xtensor-blas/include]
-        ignore line: [ /home/diketene/.myapps/xsimd/include]
-        ignore line: [ /home/diketene/.myapps/xtensor/include]
-        ignore line: [ /home/diketene/.myapps/xtl/include]
-        ignore line: [ /home/diketene/.myapps/cint/include]
-        ignore line: [ /home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
-        ignore line: [ /home/diketene/.myapps/libtorch/include]
-        ignore line: [ /opt/intel/oneapi/tbb/latest/include]
-        ignore line: [ /home/diketene/.myapps/wigxjpf/include]
-        ignore line: [ /home/diketene/.myapps/wigcpp/include]
-        ignore line: [ /home/diketene/.myapps/benchmark/include]
-        ignore line: [ /home/diketene/.myapps/lua/5.1.4.9/include]
-        ignore line: [ .]
-        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
-        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/include]
-        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 09da128e04303c352d1771409bcdeeb2]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_07795.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o /tmp/ccUjCXlZ.s]
-        ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
-        ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_07795]
-        ignore line: [/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07795.dir/link.txt --verbose=1]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc]
-        ignore line: [COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c c++ fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 16.1.0 (GCC) ]
-        ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_07795' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_07795.']
-        link line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciUUH8V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_07795 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
-          arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cciUUH8V.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
-          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_07795] ==> ignore
-          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
-          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
-          arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o]
-          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
-          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-          arg [-L/home/diketene/.myapps/gtest/lib] ==> dir [/home/diketene/.myapps/gtest/lib]
-          arg [-L/home/diketene/.myapps/boost/lib] ==> dir [/home/diketene/.myapps/boost/lib]
-          arg [-L/home/diketene/.myapps/libtorch/lib] ==> dir [/home/diketene/.myapps/libtorch/lib]
-          arg [-L/opt/intel/oneapi/tbb/latest/lib] ==> dir [/opt/intel/oneapi/tbb/latest/lib]
-          arg [-L/home/diketene/.myapps/wigxjpf/lib] ==> dir [/home/diketene/.myapps/wigxjpf/lib]
-          arg [-L.] ==> ignore
-          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..]
-          arg [-L/lib] ==> dir [/lib]
-          arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
-          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
-          arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
-          arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o]
-          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
-        ignore line: [collect2 version 16.1.0]
-        ignore line: [/usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciUUH8V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_07795 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_07795.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
-        linker tool for 'C': /usr/bin/ld
-        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
-        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> [/home/diketene/.myapps/gcc-16.1.0/lib64]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib64] ==> [/lib64]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-        collapse library dir [/home/diketene/.myapps/gtest/lib] ==> [/home/diketene/.myapps/gtest/lib]
-        collapse library dir [/home/diketene/.myapps/boost/lib] ==> [/home/diketene/.myapps/boost/lib]
-        collapse library dir [/home/diketene/.myapps/libtorch/lib] ==> [/home/diketene/.myapps/libtorch/lib]
-        collapse library dir [/opt/intel/oneapi/tbb/latest/lib] ==> [/opt/intel/oneapi/tbb/latest/lib]
-        collapse library dir [/home/diketene/.myapps/wigxjpf/lib] ==> [/home/diketene/.myapps/wigxjpf/lib]
-        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..] ==> [/home/diketene/.myapps/gcc-16.1.0/lib]
-        collapse library dir [/lib] ==> [/lib]
-        collapse library dir [/usr/lib] ==> [/usr/lib]
-        implicit libs: [gcc;gcc_s_asneeded;atomic_asneeded;c;gcc;gcc_s_asneeded]
-        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0;/home/diketene/.myapps/gcc-16.1.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/home/diketene/.myapps/gtest/lib;/home/diketene/.myapps/boost/lib;/home/diketene/.myapps/libtorch/lib;/opt/intel/oneapi/tbb/latest/lib;/home/diketene/.myapps/wigxjpf/lib;/home/diketene/.myapps/gcc-16.1.0/lib;/lib;/usr/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the C compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils for Debian) 2.40
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -401,13 +50,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6e38/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e6e38.dir/build.make CMakeFiles/cmTC_e6e38.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI'
-        Building CXX object CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/g++   -v -o CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4059e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4059e.dir/build.make CMakeFiles/cmTC_4059e.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2'
+        Building CXX object CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/g++   -v -o CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/g++
         Target: x86_64-linux-gnu
@@ -415,8 +64,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_e6e38.dir/'
-         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_e6e38.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -version -o /tmp/ccXSkgwN.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_4059e.dir/'
+         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_4059e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -version -o /tmp/ccQkKBGL.s
         GNU C++20 (GCC) version 16.1.0 (x86_64-linux-gnu)
         	compiled by GNU C version 16.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -458,14 +107,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: d65666eeef9f31bef826a7c1805934f5
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_e6e38.dir/'
-         as -v --64 -o CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXSkgwN.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_4059e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQkKBGL.s
         GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
         COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_e6e38
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6e38.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4059e
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4059e.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/g++
         COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper
@@ -476,14 +125,14 @@ events:
         gcc version 16.1.0 (GCC) 
         COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6e38' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_e6e38.'
-         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLg7KrD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6e38 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4059e' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_4059e.'
+         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVcKwGR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4059e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         collect2 version 16.1.0
-        /usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLg7KrD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6e38 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVcKwGR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4059e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Debian) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6e38' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_e6e38.'
-        /home/diketene/.myapps/gcc-16.1.0/bin/g++  -v -Wl,-v CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e6e38
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4059e' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_4059e.'
+        /home/diketene/.myapps/gcc-16.1.0/bin/g++  -v -Wl,-v CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4059e
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2'
         
       exitCode: 0
   -
@@ -568,13 +217,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI']
+        ignore line: [Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6e38/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e6e38.dir/build.make CMakeFiles/cmTC_e6e38.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-7Wg9TI']
-        ignore line: [Building CXX object CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/home/diketene/.myapps/gcc-16.1.0/bin/g++   -v -o CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4059e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_4059e.dir/build.make CMakeFiles/cmTC_4059e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-v5Lcr2']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/diketene/.myapps/gcc-16.1.0/bin/g++   -v -o CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/g++]
         ignore line: [Target: x86_64-linux-gnu]
@@ -582,8 +231,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_e6e38.dir/']
-        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_e6e38.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -version -o /tmp/ccXSkgwN.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_4059e.dir/']
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_4059e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -version -o /tmp/ccQkKBGL.s]
         ignore line: [GNU C++20 (GCC) version 16.1.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -625,14 +274,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: d65666eeef9f31bef826a7c1805934f5]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_e6e38.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXSkgwN.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_4059e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQkKBGL.s]
         ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
         ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_e6e38]
-        ignore line: [/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6e38.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4059e]
+        ignore line: [/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4059e.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/g++]
         ignore line: [COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper]
@@ -643,13 +292,13 @@ events:
         ignore line: [gcc version 16.1.0 (GCC) ]
         ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6e38' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_e6e38.']
-        link line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLg7KrD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6e38 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4059e' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_4059e.']
+        link line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVcKwGR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4059e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccLg7KrD.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccVcKwGR.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -663,7 +312,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_e6e38] ==> ignore
+          arg [cmTC_4059e] ==> ignore
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o]
@@ -683,7 +332,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -695,7 +344,7 @@ events:
           arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o]
           arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 16.1.0]
-        ignore line: [/usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLg7KrD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6e38 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e6e38.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVcKwGR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4059e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4059e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
         collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> [/home/diketene/.myapps/gcc-16.1.0/lib64]
@@ -728,6 +377,357 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Debian) 2.40
   -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "third_party/wigxjpf-1.13/CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/diketene/.myapps/gcc-16.1.0/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/3.31.4/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "third_party/wigxjpf-1.13/CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78'
+        
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32452/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_32452.dir/build.make CMakeFiles/cmTC_32452.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78'
+        Building C object CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc   -v -o CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc
+        Target: x86_64-linux-gnu
+        Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_32452.dir/'
+         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_32452.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -o /tmp/ccW1F3cD.s
+        GNU C23 (GCC) version 16.1.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 16.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/diketene/.myapps/imagemagick/include/
+         /home/diketene/.myapps/kokkos/include
+         /home/diketene/.myapps/gtest/include/
+         /home/diketene/.myapps/OpenBLAS/include/openblas
+         /opt/intel/oneapi/mkl/latest/include
+         /home/diketene/.myapps/openmpi/include
+         /home/diketene/.myapps/boost/include/
+         /home/diketene/.myapps/eigen/include/eigen3
+         /home/diketene/.myapps/xtensor-blas/include
+         /home/diketene/.myapps/xsimd/include
+         /home/diketene/.myapps/xtensor/include
+         /home/diketene/.myapps/xtl/include
+         /home/diketene/.myapps/cint/include
+         /home/diketene/.myapps/libtorch/include/torch/csrc/api/include
+         /home/diketene/.myapps/libtorch/include
+         /opt/intel/oneapi/tbb/latest/include
+         /home/diketene/.myapps/wigxjpf/include
+         /home/diketene/.myapps/wigcpp/include
+         /home/diketene/.myapps/benchmark/include
+         /home/diketene/.myapps/lua/5.1.4.9/include
+         .
+         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include
+         /home/diketene/.myapps/gcc-16.1.0/include
+         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 09da128e04303c352d1771409bcdeeb2
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_32452.dir/'
+         as -v --64 -o CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o /tmp/ccW1F3cD.s
+        GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+        COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_32452
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32452.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper
+        Target: x86_64-linux-gnu
+        Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.0 (GCC) 
+        COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_32452' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_32452.'
+         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9QMAbU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_32452 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        collect2 version 16.1.0
+        /usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9QMAbU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_32452 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.40
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_32452' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_32452.'
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc  -v -Wl,-v CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -o cmTC_32452
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "third_party/wigxjpf-1.13/CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/diketene/.myapps/imagemagick/include/]
+          add: [/home/diketene/.myapps/kokkos/include]
+          add: [/home/diketene/.myapps/gtest/include/]
+          add: [/home/diketene/.myapps/OpenBLAS/include/openblas]
+          add: [/opt/intel/oneapi/mkl/latest/include]
+          add: [/home/diketene/.myapps/openmpi/include]
+          add: [/home/diketene/.myapps/boost/include/]
+          add: [/home/diketene/.myapps/eigen/include/eigen3]
+          add: [/home/diketene/.myapps/xtensor-blas/include]
+          add: [/home/diketene/.myapps/xsimd/include]
+          add: [/home/diketene/.myapps/xtensor/include]
+          add: [/home/diketene/.myapps/xtl/include]
+          add: [/home/diketene/.myapps/cint/include]
+          add: [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
+          add: [/home/diketene/.myapps/libtorch/include]
+          add: [/opt/intel/oneapi/tbb/latest/include]
+          add: [/home/diketene/.myapps/wigxjpf/include]
+          add: [/home/diketene/.myapps/wigcpp/include]
+          add: [/home/diketene/.myapps/benchmark/include]
+          add: [/home/diketene/.myapps/lua/5.1.4.9/include]
+          add: [.]
+          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
+          add: [/home/diketene/.myapps/gcc-16.1.0/include]
+          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/diketene/.myapps/imagemagick/include/] ==> [/home/diketene/.myapps/imagemagick/include]
+        collapse include dir [/home/diketene/.myapps/kokkos/include] ==> [/home/diketene/.myapps/kokkos/include]
+        collapse include dir [/home/diketene/.myapps/gtest/include/] ==> [/home/diketene/.myapps/gtest/include]
+        collapse include dir [/home/diketene/.myapps/OpenBLAS/include/openblas] ==> [/home/diketene/.myapps/OpenBLAS/include/openblas]
+        collapse include dir [/opt/intel/oneapi/mkl/latest/include] ==> [/opt/intel/oneapi/mkl/latest/include]
+        collapse include dir [/home/diketene/.myapps/openmpi/include] ==> [/home/diketene/.myapps/openmpi/include]
+        collapse include dir [/home/diketene/.myapps/boost/include/] ==> [/home/diketene/.myapps/boost/include]
+        collapse include dir [/home/diketene/.myapps/eigen/include/eigen3] ==> [/home/diketene/.myapps/eigen/include/eigen3]
+        collapse include dir [/home/diketene/.myapps/xtensor-blas/include] ==> [/home/diketene/.myapps/xtensor-blas/include]
+        collapse include dir [/home/diketene/.myapps/xsimd/include] ==> [/home/diketene/.myapps/xsimd/include]
+        collapse include dir [/home/diketene/.myapps/xtensor/include] ==> [/home/diketene/.myapps/xtensor/include]
+        collapse include dir [/home/diketene/.myapps/xtl/include] ==> [/home/diketene/.myapps/xtl/include]
+        collapse include dir [/home/diketene/.myapps/cint/include] ==> [/home/diketene/.myapps/cint/include]
+        collapse include dir [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include] ==> [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
+        collapse include dir [/home/diketene/.myapps/libtorch/include] ==> [/home/diketene/.myapps/libtorch/include]
+        collapse include dir [/opt/intel/oneapi/tbb/latest/include] ==> [/opt/intel/oneapi/tbb/latest/include]
+        collapse include dir [/home/diketene/.myapps/wigxjpf/include] ==> [/home/diketene/.myapps/wigxjpf/include]
+        collapse include dir [/home/diketene/.myapps/wigcpp/include] ==> [/home/diketene/.myapps/wigcpp/include]
+        collapse include dir [/home/diketene/.myapps/benchmark/include] ==> [/home/diketene/.myapps/benchmark/include]
+        collapse include dir [/home/diketene/.myapps/lua/5.1.4.9/include] ==> [/home/diketene/.myapps/lua/5.1.4.9/include]
+        skipping relative include dir [.]
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/include] ==> [/home/diketene/.myapps/gcc-16.1.0/include]
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/diketene/.myapps/imagemagick/include;/home/diketene/.myapps/kokkos/include;/home/diketene/.myapps/gtest/include;/home/diketene/.myapps/OpenBLAS/include/openblas;/opt/intel/oneapi/mkl/latest/include;/home/diketene/.myapps/openmpi/include;/home/diketene/.myapps/boost/include;/home/diketene/.myapps/eigen/include/eigen3;/home/diketene/.myapps/xtensor-blas/include;/home/diketene/.myapps/xsimd/include;/home/diketene/.myapps/xtensor/include;/home/diketene/.myapps/xtl/include;/home/diketene/.myapps/cint/include;/home/diketene/.myapps/libtorch/include/torch/csrc/api/include;/home/diketene/.myapps/libtorch/include;/opt/intel/oneapi/tbb/latest/include;/home/diketene/.myapps/wigxjpf/include;/home/diketene/.myapps/wigcpp/include;/home/diketene/.myapps/benchmark/include;/home/diketene/.myapps/lua/5.1.4.9/include;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include;/home/diketene/.myapps/gcc-16.1.0/include;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "third_party/wigxjpf-1.13/CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32452/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_32452.dir/build.make CMakeFiles/cmTC_32452.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-sOjk78']
+        ignore line: [Building C object CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/diketene/.myapps/gcc-16.1.0/bin/gcc   -v -o CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c c++ fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_32452.dir/']
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_32452.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -o /tmp/ccW1F3cD.s]
+        ignore line: [GNU C23 (GCC) version 16.1.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/diketene/.myapps/imagemagick/include/]
+        ignore line: [ /home/diketene/.myapps/kokkos/include]
+        ignore line: [ /home/diketene/.myapps/gtest/include/]
+        ignore line: [ /home/diketene/.myapps/OpenBLAS/include/openblas]
+        ignore line: [ /opt/intel/oneapi/mkl/latest/include]
+        ignore line: [ /home/diketene/.myapps/openmpi/include]
+        ignore line: [ /home/diketene/.myapps/boost/include/]
+        ignore line: [ /home/diketene/.myapps/eigen/include/eigen3]
+        ignore line: [ /home/diketene/.myapps/xtensor-blas/include]
+        ignore line: [ /home/diketene/.myapps/xsimd/include]
+        ignore line: [ /home/diketene/.myapps/xtensor/include]
+        ignore line: [ /home/diketene/.myapps/xtl/include]
+        ignore line: [ /home/diketene/.myapps/cint/include]
+        ignore line: [ /home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
+        ignore line: [ /home/diketene/.myapps/libtorch/include]
+        ignore line: [ /opt/intel/oneapi/tbb/latest/include]
+        ignore line: [ /home/diketene/.myapps/wigxjpf/include]
+        ignore line: [ /home/diketene/.myapps/wigcpp/include]
+        ignore line: [ /home/diketene/.myapps/benchmark/include]
+        ignore line: [ /home/diketene/.myapps/lua/5.1.4.9/include]
+        ignore line: [ .]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/include]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 09da128e04303c352d1771409bcdeeb2]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_32452.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o /tmp/ccW1F3cD.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
+        ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_32452]
+        ignore line: [/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32452.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c c++ fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_32452' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_32452.']
+        link line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9QMAbU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_32452 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc9QMAbU.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_32452] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o]
+          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
+          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/diketene/.myapps/gtest/lib] ==> dir [/home/diketene/.myapps/gtest/lib]
+          arg [-L/home/diketene/.myapps/boost/lib] ==> dir [/home/diketene/.myapps/boost/lib]
+          arg [-L/home/diketene/.myapps/libtorch/lib] ==> dir [/home/diketene/.myapps/libtorch/lib]
+          arg [-L/opt/intel/oneapi/tbb/latest/lib] ==> dir [/opt/intel/oneapi/tbb/latest/lib]
+          arg [-L/home/diketene/.myapps/wigxjpf/lib] ==> dir [/home/diketene/.myapps/wigxjpf/lib]
+          arg [-L.] ==> ignore
+          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
+          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
+          arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 16.1.0]
+        ignore line: [/usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9QMAbU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_32452 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_32452.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
+        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> [/home/diketene/.myapps/gcc-16.1.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/diketene/.myapps/gtest/lib] ==> [/home/diketene/.myapps/gtest/lib]
+        collapse library dir [/home/diketene/.myapps/boost/lib] ==> [/home/diketene/.myapps/boost/lib]
+        collapse library dir [/home/diketene/.myapps/libtorch/lib] ==> [/home/diketene/.myapps/libtorch/lib]
+        collapse library dir [/opt/intel/oneapi/tbb/latest/lib] ==> [/opt/intel/oneapi/tbb/latest/lib]
+        collapse library dir [/home/diketene/.myapps/wigxjpf/lib] ==> [/home/diketene/.myapps/wigxjpf/lib]
+        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..] ==> [/home/diketene/.myapps/gcc-16.1.0/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s_asneeded;atomic_asneeded;c;gcc;gcc_s_asneeded]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0;/home/diketene/.myapps/gcc-16.1.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/home/diketene/.myapps/gtest/lib;/home/diketene/.myapps/boost/lib;/home/diketene/.myapps/libtorch/lib;/opt/intel/oneapi/tbb/latest/lib;/home/diketene/.myapps/wigxjpf/lib;/home/diketene/.myapps/gcc-16.1.0/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "third_party/wigxjpf-1.13/CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.40
+  -
     kind: "try_compile-v1"
     backtrace:
       - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
@@ -736,8 +736,8 @@ events:
     checks:
       - "Performing Test HAS_LONG_DOUBLE"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pjTInv"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pjTInv"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-AcXK2y"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-AcXK2y"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -746,17 +746,17 @@ events:
       variable: "HAS_LONG_DOUBLE"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pjTInv'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-AcXK2y'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba165/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ba165.dir/build.make CMakeFiles/cmTC_ba165.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pjTInv'
-        Building C object CMakeFiles/cmTC_ba165.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_LONG_DOUBLE   -o CMakeFiles/cmTC_ba165.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pjTInv/src.c
-        Linking C executable cmTC_ba165
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba165.dir/link.txt --verbose=1
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_ba165.dir/src.c.o -o cmTC_ba165
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pjTInv'
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_73009/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_73009.dir/build.make CMakeFiles/cmTC_73009.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-AcXK2y'
+        Building C object CMakeFiles/cmTC_73009.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_LONG_DOUBLE   -o CMakeFiles/cmTC_73009.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-AcXK2y/src.c
+        Linking C executable cmTC_73009
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73009.dir/link.txt --verbose=1
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_73009.dir/src.c.o -o cmTC_73009
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-AcXK2y'
         
       exitCode: 0
   -
@@ -768,8 +768,8 @@ events:
     checks:
       - "Performing Test HAS_FLOAT128"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-47IibZ"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-47IibZ"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FP7D39"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FP7D39"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -778,22 +778,22 @@ events:
       variable: "HAS_FLOAT128"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-47IibZ'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FP7D39'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ee01/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_3ee01.dir/build.make CMakeFiles/cmTC_3ee01.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-47IibZ'
-        Building C object CMakeFiles/cmTC_3ee01.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_FLOAT128   -o CMakeFiles/cmTC_3ee01.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-47IibZ/src.c
-        Linking C executable cmTC_3ee01
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ee01.dir/link.txt --verbose=1
-        /usr/bin/ld: CMakeFiles/cmTC_3ee01.dir/src.c.o: in function `main':
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e52e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e52e.dir/build.make CMakeFiles/cmTC_9e52e.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FP7D39'
+        Building C object CMakeFiles/cmTC_9e52e.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_FLOAT128   -o CMakeFiles/cmTC_9e52e.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FP7D39/src.c
+        Linking C executable cmTC_9e52e
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e52e.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_9e52e.dir/src.c.o: in function `main':
         src.c:(.text+0x54): undefined reference to `quadmath_snprintf'
         collect2: error: ld returned 1 exit status
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_3ee01.dir/src.c.o -o cmTC_3ee01
-        gmake[1]: *** [CMakeFiles/cmTC_3ee01.dir/build.make:102: cmTC_3ee01] Error 1
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-47IibZ'
-        gmake: *** [Makefile:134: cmTC_3ee01/fast] Error 2
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_9e52e.dir/src.c.o -o cmTC_9e52e
+        gmake[1]: *** [CMakeFiles/cmTC_9e52e.dir/build.make:102: cmTC_9e52e] Error 1
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-FP7D39'
+        gmake: *** [Makefile:134: cmTC_9e52e/fast] Error 2
         
       exitCode: 2
   -
@@ -805,8 +805,8 @@ events:
     checks:
       - "Performing Test HAS_THREAD"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-wwPKp0"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-wwPKp0"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pNkUNG"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pNkUNG"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -815,17 +815,17 @@ events:
       variable: "HAS_THREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-wwPKp0'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pNkUNG'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eb32b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_eb32b.dir/build.make CMakeFiles/cmTC_eb32b.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-wwPKp0'
-        Building C object CMakeFiles/cmTC_eb32b.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_THREAD   -o CMakeFiles/cmTC_eb32b.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-wwPKp0/src.c
-        Linking C executable cmTC_eb32b
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb32b.dir/link.txt --verbose=1
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_eb32b.dir/src.c.o -o cmTC_eb32b
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-wwPKp0'
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e9955/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e9955.dir/build.make CMakeFiles/cmTC_e9955.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pNkUNG'
+        Building C object CMakeFiles/cmTC_e9955.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_THREAD   -o CMakeFiles/cmTC_e9955.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pNkUNG/src.c
+        Linking C executable cmTC_e9955
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9955.dir/link.txt --verbose=1
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_e9955.dir/src.c.o -o cmTC_e9955
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-pNkUNG'
         
       exitCode: 0
   -
@@ -837,8 +837,8 @@ events:
     checks:
       - "Performing Test HAS_UINT128"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6LrobU"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6LrobU"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-F6eYjA"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-F6eYjA"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -847,17 +847,17 @@ events:
       variable: "HAS_UINT128"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6LrobU'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-F6eYjA'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1630d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1630d.dir/build.make CMakeFiles/cmTC_1630d.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6LrobU'
-        Building C object CMakeFiles/cmTC_1630d.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_UINT128   -o CMakeFiles/cmTC_1630d.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6LrobU/src.c
-        Linking C executable cmTC_1630d
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1630d.dir/link.txt --verbose=1
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_1630d.dir/src.c.o -o cmTC_1630d
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-6LrobU'
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d0171/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d0171.dir/build.make CMakeFiles/cmTC_d0171.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-F6eYjA'
+        Building C object CMakeFiles/cmTC_d0171.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DHAS_UINT128   -o CMakeFiles/cmTC_d0171.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-F6eYjA/src.c
+        Linking C executable cmTC_d0171
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0171.dir/link.txt --verbose=1
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_d0171.dir/src.c.o -o cmTC_d0171
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-F6eYjA'
         
       exitCode: 0
   -
@@ -869,8 +869,8 @@ events:
     checks:
       - "Performing Test TEST_TRAIL_ARRAY_EMPTY"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-bhU06y"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-bhU06y"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-PLoENQ"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-PLoENQ"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -879,17 +879,17 @@ events:
       variable: "TEST_TRAIL_ARRAY_EMPTY"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-bhU06y'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-PLoENQ'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1df8a/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1df8a.dir/build.make CMakeFiles/cmTC_1df8a.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-bhU06y'
-        Building C object CMakeFiles/cmTC_1df8a.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DTEST_TRAIL_ARRAY_EMPTY   -o CMakeFiles/cmTC_1df8a.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-bhU06y/src.c
-        Linking C executable cmTC_1df8a
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1df8a.dir/link.txt --verbose=1
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_1df8a.dir/src.c.o -o cmTC_1df8a
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-bhU06y'
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be7f6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_be7f6.dir/build.make CMakeFiles/cmTC_be7f6.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-PLoENQ'
+        Building C object CMakeFiles/cmTC_be7f6.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DTEST_TRAIL_ARRAY_EMPTY   -o CMakeFiles/cmTC_be7f6.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-PLoENQ/src.c
+        Linking C executable cmTC_be7f6
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be7f6.dir/link.txt --verbose=1
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_be7f6.dir/src.c.o -o cmTC_be7f6
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-PLoENQ'
         
       exitCode: 0
   -
@@ -901,8 +901,8 @@ events:
     checks:
       - "Performing Test TEST_TRAIL_ARRAY_ZERO"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-9nXwWm"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-9nXwWm"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-fhiHTt"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-fhiHTt"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -911,17 +911,17 @@ events:
       variable: "TEST_TRAIL_ARRAY_ZERO"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-9nXwWm'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-fhiHTt'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb66c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_fb66c.dir/build.make CMakeFiles/cmTC_fb66c.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-9nXwWm'
-        Building C object CMakeFiles/cmTC_fb66c.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DTEST_TRAIL_ARRAY_ZERO   -o CMakeFiles/cmTC_fb66c.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-9nXwWm/src.c
-        Linking C executable cmTC_fb66c
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb66c.dir/link.txt --verbose=1
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_fb66c.dir/src.c.o -o cmTC_fb66c
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-9nXwWm'
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_03ff0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_03ff0.dir/build.make CMakeFiles/cmTC_03ff0.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-fhiHTt'
+        Building C object CMakeFiles/cmTC_03ff0.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DTEST_TRAIL_ARRAY_ZERO   -o CMakeFiles/cmTC_03ff0.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-fhiHTt/src.c
+        Linking C executable cmTC_03ff0
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03ff0.dir/link.txt --verbose=1
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_03ff0.dir/src.c.o -o cmTC_03ff0
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-fhiHTt'
         
       exitCode: 0
   -
@@ -933,8 +933,8 @@ events:
     checks:
       - "Performing Test TEST_TRAIL_ARRAY_ONE"
     directories:
-      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-X1WkBL"
-      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-X1WkBL"
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ZBfWMz"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ZBfWMz"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -943,17 +943,468 @@ events:
       variable: "TEST_TRAIL_ARRAY_ONE"
       cached: true
       stdout: |
-        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-X1WkBL'
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ZBfWMz'
         
-        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d279/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7d279.dir/build.make CMakeFiles/cmTC_7d279.dir/build
-        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-X1WkBL'
-        Building C object CMakeFiles/cmTC_7d279.dir/src.c.o
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DTEST_TRAIL_ARRAY_ONE   -o CMakeFiles/cmTC_7d279.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-X1WkBL/src.c
-        Linking C executable cmTC_7d279
-        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d279.dir/link.txt --verbose=1
-        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_7d279.dir/src.c.o -o cmTC_7d279
-        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-X1WkBL'
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4666d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4666d.dir/build.make CMakeFiles/cmTC_4666d.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ZBfWMz'
+        Building C object CMakeFiles/cmTC_4666d.dir/src.c.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc -DTEST_TRAIL_ARRAY_ONE   -o CMakeFiles/cmTC_4666d.dir/src.c.o -c /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ZBfWMz/src.c
+        Linking C executable cmTC_4666d
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4666d.dir/link.txt --verbose=1
+        /home/diketene/.myapps/gcc-16.1.0/bin/gcc CMakeFiles/cmTC_4666d.dir/src.c.o -o cmTC_4666d
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-ZBfWMz'
         
       exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CheckLanguage.cmake:133 (message)"
+      - "/home/diketene/wigcpp_project/wigcpp/cmake/OptionHandler.cmake:22 (check_language)"
+      - "/home/diketene/wigcpp_project/wigcpp/CMakeLists.txt:74 (include)"
+    checks:
+      - "Looking for a Fortran compiler"
+    message: |
+      Looking for a Fortran compiler passed with the following output:
+      -- The Fortran compiler identification is GNU 16.1.0
+      -- Detecting Fortran compiler ABI info
+      -- Detecting Fortran compiler ABI info - done
+      -- Check for working Fortran compiler: /home/diketene/.myapps/gcc-16.1.0/bin/gfortran - skipped
+      -- Configuring done (0.8s)
+      -- Generating done (0.0s)
+      -- Build files have been written to: /home/diketene/wigcpp_project/wigcpp_benchmark/build/wigcpp/CMakeFiles/CheckFortran
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineFortranCompiler.cmake:190 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/diketene/wigcpp_project/wigcpp/cmake/OptionHandler.cmake:26 (enable_language)"
+      - "/home/diketene/wigcpp_project/wigcpp/CMakeLists.txt:74 (include)"
+    message: |
+      Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+      Compiler: /home/diketene/.myapps/gcc-16.1.0/bin/gfortran 
+      Build flags: 
+      Id flags: -v 
+      
+      The output was:
+      0
+      Driving: /home/diketene/.myapps/gcc-16.1.0/bin/gfortran -v CMakeFortranCompilerId.F -l gfortran -l m -shared-libgcc
+      Using built-in specs.
+      COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gfortran
+      COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper
+      Target: x86_64-linux-gnu
+      Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
+      Thread model: posix
+      Supported LTO compression algorithms: zlib zstd
+      gcc version 16.1.0 (GCC) 
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'a-'
+       /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccL16WjV.fi -quiet -v -imultiarch x86_64-linux-gnu CMakeFortranCompilerId.F -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -version -fintrinsic-modules-path /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h -o /tmp/ccB36esx.s
+      GNU Fortran (GCC) version 16.1.0 (x86_64-linux-gnu)
+      	compiled by GNU C version 16.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+      GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+      ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+      ignoring nonexistent directory "/usr/local/include"
+      ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"
+      ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"
+      #include "..." search starts here:
+      #include <...> search starts here:
+       /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude
+       /home/diketene/.myapps/imagemagick/include/
+       /home/diketene/.myapps/kokkos/include
+       /home/diketene/.myapps/gtest/include/
+       /home/diketene/.myapps/OpenBLAS/include/openblas
+       /opt/intel/oneapi/mkl/latest/include
+       /home/diketene/.myapps/openmpi/include
+       /home/diketene/.myapps/boost/include/
+       /home/diketene/.myapps/eigen/include/eigen3
+       /home/diketene/.myapps/xtensor-blas/include
+       /home/diketene/.myapps/xsimd/include
+       /home/diketene/.myapps/xtensor/include
+       /home/diketene/.myapps/xtl/include
+       /home/diketene/.myapps/cint/include
+       /home/diketene/.myapps/libtorch/include/torch/csrc/api/include
+       /home/diketene/.myapps/libtorch/include
+       /opt/intel/oneapi/tbb/latest/include
+       /home/diketene/.myapps/wigxjpf/include
+       /home/diketene/.myapps/wigcpp/include
+       /home/diketene/.myapps/benchmark/include
+       /home/diketene/.myapps/lua/5.1.4.9/include
+       .
+       /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include
+       /home/diketene/.myapps/gcc-16.1.0/include
+       /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed
+       /usr/include/x86_64-linux-gnu
+       /usr/include
+      End of search list.
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'a-'
+       as -v --64 -o /tmp/cc4Blsbk.o /tmp/ccB36esx.s
+      GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+      Reading specs from /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/libgfortran.spec
+      rename spec lib to liborig
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'a-'
+      COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
+      LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'a.'
+       /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGpHY6E.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib /tmp/cc4Blsbk.o -lgfortran -lm -lgcc_s -lgcc -latomic_asneeded --as-needed -lquadmath --no-as-needed -lm -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+      COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'a.'
+      
+      
+      Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+      
+      The Fortran compiler identification is GNU, found in:
+        /home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/3.31.4/CompilerIdFortran/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/diketene/wigcpp_project/wigcpp/cmake/OptionHandler.cmake:26 (enable_language)"
+      - "/home/diketene/wigcpp_project/wigcpp/CMakeLists.txt:74 (include)"
+    checks:
+      - "Detecting Fortran compiler ABI info"
+    directories:
+      source: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce"
+      binary: "/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+    buildResult:
+      variable: "CMAKE_Fortran_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce'
+        
+        Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5873/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b5873.dir/build.make CMakeFiles/cmTC_b5873.dir/build
+        gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce'
+        Building Fortran object CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o
+        /home/diketene/.myapps/gcc-16.1.0/bin/gfortran   -v -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o
+        Using built-in specs.
+        COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gfortran
+        Target: x86_64-linux-gnu
+        Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_b5873.dir/'
+         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/f951 /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccjllF9e.fii -quiet -v -imultiarch x86_64-linux-gnu /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeFortranCompilerABI.F90 -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_b5873.dir/ -dumpbase CMakeFortranCompilerABI.F90.F90 -dumpbase-ext .F90 -version -fintrinsic-modules-path /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h -o /tmp/ccJOHvJr.s
+        GNU Fortran (GCC) version 16.1.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 16.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude
+         /home/diketene/.myapps/imagemagick/include/
+         /home/diketene/.myapps/kokkos/include
+         /home/diketene/.myapps/gtest/include/
+         /home/diketene/.myapps/OpenBLAS/include/openblas
+         /opt/intel/oneapi/mkl/latest/include
+         /home/diketene/.myapps/openmpi/include
+         /home/diketene/.myapps/boost/include/
+         /home/diketene/.myapps/eigen/include/eigen3
+         /home/diketene/.myapps/xtensor-blas/include
+         /home/diketene/.myapps/xsimd/include
+         /home/diketene/.myapps/xtensor/include
+         /home/diketene/.myapps/xtl/include
+         /home/diketene/.myapps/cint/include
+         /home/diketene/.myapps/libtorch/include/torch/csrc/api/include
+         /home/diketene/.myapps/libtorch/include
+         /opt/intel/oneapi/tbb/latest/include
+         /home/diketene/.myapps/wigxjpf/include
+         /home/diketene/.myapps/wigcpp/include
+         /home/diketene/.myapps/benchmark/include
+         /home/diketene/.myapps/lua/5.1.4.9/include
+         .
+         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include
+         /home/diketene/.myapps/gcc-16.1.0/include
+         /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_b5873.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o /tmp/ccJOHvJr.s
+        GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+        COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.'
+        Linking Fortran executable cmTC_b5873
+        /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5873.dir/link.txt --verbose=1
+        Driving: /home/diketene/.myapps/gcc-16.1.0/bin/gfortran -v -Wl,-v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -o cmTC_b5873 -l gfortran -l m -shared-libgcc
+        Using built-in specs.
+        COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gfortran
+        COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper
+        Target: x86_64-linux-gnu
+        Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c,c++,fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.0 (GCC) 
+        Reading specs from /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/libgfortran.spec
+        rename spec lib to liborig
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5873' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_b5873-'
+        COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5873' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_b5873.'
+         /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRBdDjY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b5873 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -latomic_asneeded --as-needed -lquadmath --no-as-needed -lm -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        collect2 version 16.1.0
+        /usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRBdDjY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b5873 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -latomic_asneeded --as-needed -lquadmath --no-as-needed -lm -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.40
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5873' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_b5873.'
+        /home/diketene/.myapps/gcc-16.1.0/bin/gfortran  -v -Wl,-v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -o cmTC_b5873
+        gmake[1]: Leaving directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/diketene/wigcpp_project/wigcpp/cmake/OptionHandler.cmake:26 (enable_language)"
+      - "/home/diketene/wigcpp_project/wigcpp/CMakeLists.txt:74 (include)"
+    message: |
+      Parsed Fortran implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude]
+          add: [/home/diketene/.myapps/imagemagick/include/]
+          add: [/home/diketene/.myapps/kokkos/include]
+          add: [/home/diketene/.myapps/gtest/include/]
+          add: [/home/diketene/.myapps/OpenBLAS/include/openblas]
+          add: [/opt/intel/oneapi/mkl/latest/include]
+          add: [/home/diketene/.myapps/openmpi/include]
+          add: [/home/diketene/.myapps/boost/include/]
+          add: [/home/diketene/.myapps/eigen/include/eigen3]
+          add: [/home/diketene/.myapps/xtensor-blas/include]
+          add: [/home/diketene/.myapps/xsimd/include]
+          add: [/home/diketene/.myapps/xtensor/include]
+          add: [/home/diketene/.myapps/xtl/include]
+          add: [/home/diketene/.myapps/cint/include]
+          add: [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
+          add: [/home/diketene/.myapps/libtorch/include]
+          add: [/opt/intel/oneapi/tbb/latest/include]
+          add: [/home/diketene/.myapps/wigxjpf/include]
+          add: [/home/diketene/.myapps/wigcpp/include]
+          add: [/home/diketene/.myapps/benchmark/include]
+          add: [/home/diketene/.myapps/lua/5.1.4.9/include]
+          add: [.]
+          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
+          add: [/home/diketene/.myapps/gcc-16.1.0/include]
+          add: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude]
+        collapse include dir [/home/diketene/.myapps/imagemagick/include/] ==> [/home/diketene/.myapps/imagemagick/include]
+        collapse include dir [/home/diketene/.myapps/kokkos/include] ==> [/home/diketene/.myapps/kokkos/include]
+        collapse include dir [/home/diketene/.myapps/gtest/include/] ==> [/home/diketene/.myapps/gtest/include]
+        collapse include dir [/home/diketene/.myapps/OpenBLAS/include/openblas] ==> [/home/diketene/.myapps/OpenBLAS/include/openblas]
+        collapse include dir [/opt/intel/oneapi/mkl/latest/include] ==> [/opt/intel/oneapi/mkl/latest/include]
+        collapse include dir [/home/diketene/.myapps/openmpi/include] ==> [/home/diketene/.myapps/openmpi/include]
+        collapse include dir [/home/diketene/.myapps/boost/include/] ==> [/home/diketene/.myapps/boost/include]
+        collapse include dir [/home/diketene/.myapps/eigen/include/eigen3] ==> [/home/diketene/.myapps/eigen/include/eigen3]
+        collapse include dir [/home/diketene/.myapps/xtensor-blas/include] ==> [/home/diketene/.myapps/xtensor-blas/include]
+        collapse include dir [/home/diketene/.myapps/xsimd/include] ==> [/home/diketene/.myapps/xsimd/include]
+        collapse include dir [/home/diketene/.myapps/xtensor/include] ==> [/home/diketene/.myapps/xtensor/include]
+        collapse include dir [/home/diketene/.myapps/xtl/include] ==> [/home/diketene/.myapps/xtl/include]
+        collapse include dir [/home/diketene/.myapps/cint/include] ==> [/home/diketene/.myapps/cint/include]
+        collapse include dir [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include] ==> [/home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
+        collapse include dir [/home/diketene/.myapps/libtorch/include] ==> [/home/diketene/.myapps/libtorch/include]
+        collapse include dir [/opt/intel/oneapi/tbb/latest/include] ==> [/opt/intel/oneapi/tbb/latest/include]
+        collapse include dir [/home/diketene/.myapps/wigxjpf/include] ==> [/home/diketene/.myapps/wigxjpf/include]
+        collapse include dir [/home/diketene/.myapps/wigcpp/include] ==> [/home/diketene/.myapps/wigcpp/include]
+        collapse include dir [/home/diketene/.myapps/benchmark/include] ==> [/home/diketene/.myapps/benchmark/include]
+        collapse include dir [/home/diketene/.myapps/lua/5.1.4.9/include] ==> [/home/diketene/.myapps/lua/5.1.4.9/include]
+        skipping relative include dir [.]
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/include] ==> [/home/diketene/.myapps/gcc-16.1.0/include]
+        collapse include dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude;/home/diketene/.myapps/imagemagick/include;/home/diketene/.myapps/kokkos/include;/home/diketene/.myapps/gtest/include;/home/diketene/.myapps/OpenBLAS/include/openblas;/opt/intel/oneapi/mkl/latest/include;/home/diketene/.myapps/openmpi/include;/home/diketene/.myapps/boost/include;/home/diketene/.myapps/eigen/include/eigen3;/home/diketene/.myapps/xtensor-blas/include;/home/diketene/.myapps/xsimd/include;/home/diketene/.myapps/xtensor/include;/home/diketene/.myapps/xtl/include;/home/diketene/.myapps/cint/include;/home/diketene/.myapps/libtorch/include/torch/csrc/api/include;/home/diketene/.myapps/libtorch/include;/opt/intel/oneapi/tbb/latest/include;/home/diketene/.myapps/wigxjpf/include;/home/diketene/.myapps/wigcpp/include;/home/diketene/.myapps/benchmark/include;/home/diketene/.myapps/lua/5.1.4.9/include;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include;/home/diketene/.myapps/gcc-16.1.0/include;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/diketene/wigcpp_project/wigcpp/cmake/OptionHandler.cmake:26 (enable_language)"
+      - "/home/diketene/wigcpp_project/wigcpp/CMakeLists.txt:74 (include)"
+    message: |
+      Parsed Fortran implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5873/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b5873.dir/build.make CMakeFiles/cmTC_b5873.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/diketene/wigcpp_project/wigcpp_benchmark/build/CMakeFiles/CMakeScratch/TryCompile-hZ0hce']
+        ignore line: [Building Fortran object CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [/home/diketene/.myapps/gcc-16.1.0/bin/gfortran   -v -c /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gfortran]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c c++ fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_b5873.dir/']
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/f951 /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeFortranCompilerABI.F90 -cpp=/tmp/ccjllF9e.fii -quiet -v -imultiarch x86_64-linux-gnu /home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeFortranCompilerABI.F90 -march=alderlake -mmmx -mpopcnt -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2 -mno-sse4a -mno-fma4 -mno-xop -mfma -mno-avx512f -mbmi -mbmi2 -maes -mpclmul -mno-avx512vl -mno-avx512bw -mno-avx512dq -mno-avx512cd -mno-avx512vbmi -mno-avx512ifma -mno-avx512vpopcntdq -mno-avx512vbmi2 -mgfni -mvpclmulqdq -mno-avx512vnni -mno-avx512bitalg -mno-avx512bf16 -mno-avx512vp2intersect -mno-3dnow -madx -mabm -mno-cldemote -mclflushopt -mclwb -mno-clzero -mcx16 -mno-enqcmd -mf16c -mfsgsbase -mfxsr -mno-hle -msahf -mno-lwp -mlzcnt -mmovbe -mmovdir64b -mmovdiri -mno-mwaitx -mno-pconfig -mno-pku -mprfchw -mno-ptwrite -mrdpid -mrdrnd -mrdseed -mno-rtm -mserialize -mno-sgx -msha -mshstk -mno-tbm -mno-tsxldtrk -mvaes -mwaitpkg -mno-wbnoinvd -mxsave -mxsavec -mxsaveopt -mxsaves -mno-amx-tile -mno-amx-int8 -mno-amx-bf16 -mno-uintr -mno-hreset -mno-kl -mno-widekl -mavxvnni -mno-avx512fp16 -mno-avxifma -mno-avxvnniint8 -mno-avxneconvert -mno-cmpccxadd -mno-amx-fp16 -mno-prefetchi -mno-raoint -mno-amx-complex -mno-avxvnniint16 -mno-sm3 -mno-sha512 -mno-sm4 -mno-apxf -mno-usermsr -mno-avx10.1 -mno-avx10.2 -mno-amx-avx512 -mno-amx-tf32 -mno-amx-fp8 -mno-movrs -mno-amx-movrs -mno-avx512bmm --param l1-cache-size=48 --param l1-cache-line-size=64 --param l2-cache-size=36864 -mtune=alderlake -quiet -dumpdir CMakeFiles/cmTC_b5873.dir/ -dumpbase CMakeFortranCompilerABI.F90.F90 -dumpbase-ext .F90 -version -fintrinsic-modules-path /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude -fpre-include=/usr/include/finclude/x86_64-linux-gnu/math-vector-fortran.h -o /tmp/ccJOHvJr.s]
+        ignore line: [GNU Fortran (GCC) version 16.1.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/finclude]
+        ignore line: [ /home/diketene/.myapps/imagemagick/include/]
+        ignore line: [ /home/diketene/.myapps/kokkos/include]
+        ignore line: [ /home/diketene/.myapps/gtest/include/]
+        ignore line: [ /home/diketene/.myapps/OpenBLAS/include/openblas]
+        ignore line: [ /opt/intel/oneapi/mkl/latest/include]
+        ignore line: [ /home/diketene/.myapps/openmpi/include]
+        ignore line: [ /home/diketene/.myapps/boost/include/]
+        ignore line: [ /home/diketene/.myapps/eigen/include/eigen3]
+        ignore line: [ /home/diketene/.myapps/xtensor-blas/include]
+        ignore line: [ /home/diketene/.myapps/xsimd/include]
+        ignore line: [ /home/diketene/.myapps/xtensor/include]
+        ignore line: [ /home/diketene/.myapps/xtl/include]
+        ignore line: [ /home/diketene/.myapps/cint/include]
+        ignore line: [ /home/diketene/.myapps/libtorch/include/torch/csrc/api/include]
+        ignore line: [ /home/diketene/.myapps/libtorch/include]
+        ignore line: [ /opt/intel/oneapi/tbb/latest/include]
+        ignore line: [ /home/diketene/.myapps/wigxjpf/include]
+        ignore line: [ /home/diketene/.myapps/wigcpp/include]
+        ignore line: [ /home/diketene/.myapps/benchmark/include]
+        ignore line: [ /home/diketene/.myapps/lua/5.1.4.9/include]
+        ignore line: [ .]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/include]
+        ignore line: [ /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_b5873.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o /tmp/ccJOHvJr.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
+        ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o' '-mtune=native' '-march=native' '-dumpdir' 'CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.']
+        ignore line: [Linking Fortran executable cmTC_b5873]
+        ignore line: [/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5873.dir/link.txt --verbose=1]
+        ignore line: [Driving: /home/diketene/.myapps/gcc-16.1.0/bin/gfortran -v -Wl -v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -o cmTC_b5873 -l gfortran -l m -shared-libgcc]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/diketene/.myapps/gcc-16.1.0/bin/gfortran]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/diketene/.myapps/gcc-16.1.0 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --enable-languages=c c++ fortran --enable-default-pie --enable-checking=release --with-abi=m64 --enable-lto --enable-plugin --disable-multilib --with-arch=native --with-tune=native --enable-libstdcxx-backtrace --enable-__cxa_atexit]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.0 (GCC) ]
+        ignore line: [Reading specs from /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/libgfortran.spec]
+        ignore line: [rename spec lib to liborig]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5873' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_b5873-']
+        ignore line: [COMPILER_PATH=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/diketene/.myapps/gtest/lib/:/home/diketene/.myapps/boost/lib/:/home/diketene/.myapps/libtorch/lib/:/opt/intel/oneapi/tbb/latest/lib/:/home/diketene/.myapps/wigxjpf/lib/:./:/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b5873' '-shared-libgcc' '-mtune=native' '-march=native' '-dumpdir' 'cmTC_b5873.']
+        link line: [ /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2 -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRBdDjY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b5873 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -latomic_asneeded --as-needed -lquadmath --no-as-needed -lm -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRBdDjY.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b5873] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o]
+          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
+          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/diketene/.myapps/gtest/lib] ==> dir [/home/diketene/.myapps/gtest/lib]
+          arg [-L/home/diketene/.myapps/boost/lib] ==> dir [/home/diketene/.myapps/boost/lib]
+          arg [-L/home/diketene/.myapps/libtorch/lib] ==> dir [/home/diketene/.myapps/libtorch/lib]
+          arg [-L/opt/intel/oneapi/tbb/latest/lib] ==> dir [/opt/intel/oneapi/tbb/latest/lib]
+          arg [-L/home/diketene/.myapps/wigxjpf/lib] ==> dir [/home/diketene/.myapps/wigxjpf/lib]
+          arg [-L.] ==> ignore
+          arg [-L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..] ==> dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
+          arg [-lgfortran] ==> lib [gfortran]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
+          arg [--as-needed] ==> ignore
+          arg [-lquadmath] ==> lib [quadmath]
+          arg [--no-as-needed] ==> ignore
+          arg [-lm] ==> lib [m]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o] ==> obj [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 16.1.0]
+        ignore line: [/usr/bin/ld -plugin /home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/liblto_plugin.so -plugin-opt=/home/diketene/.myapps/gcc-16.1.0/libexec/gcc/x86_64-linux-gnu/16.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRBdDjY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b5873 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0 -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/diketene/.myapps/gtest/lib -L/home/diketene/.myapps/boost/lib -L/home/diketene/.myapps/libtorch/lib -L/opt/intel/oneapi/tbb/latest/lib -L/home/diketene/.myapps/wigxjpf/lib -L. -L/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b5873.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lm -lgcc_s -lgcc -latomic_asneeded --as-needed -lquadmath --no-as-needed -lm -lc -lgcc_s -lgcc /home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'Fortran': /usr/bin/ld
+        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0] ==> [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0]
+        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../../../lib64] ==> [/home/diketene/.myapps/gcc-16.1.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/diketene/.myapps/gtest/lib] ==> [/home/diketene/.myapps/gtest/lib]
+        collapse library dir [/home/diketene/.myapps/boost/lib] ==> [/home/diketene/.myapps/boost/lib]
+        collapse library dir [/home/diketene/.myapps/libtorch/lib] ==> [/home/diketene/.myapps/libtorch/lib]
+        collapse library dir [/opt/intel/oneapi/tbb/latest/lib] ==> [/opt/intel/oneapi/tbb/latest/lib]
+        collapse library dir [/home/diketene/.myapps/wigxjpf/lib] ==> [/home/diketene/.myapps/wigxjpf/lib]
+        collapse library dir [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/../../..] ==> [/home/diketene/.myapps/gcc-16.1.0/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gfortran;m;gcc_s;gcc;atomic_asneeded;quadmath;m;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtbeginS.o;/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/diketene/.myapps/gcc-16.1.0/lib/gcc/x86_64-linux-gnu/16.1.0;/home/diketene/.myapps/gcc-16.1.0/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/home/diketene/.myapps/gtest/lib;/home/diketene/.myapps/boost/lib;/home/diketene/.myapps/libtorch/lib;/opt/intel/oneapi/tbb/latest/lib;/home/diketene/.myapps/wigxjpf/lib;/home/diketene/.myapps/gcc-16.1.0/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/diketene/.myapps/cmake/cmake-3.31.4-linux-x86_64/share/cmake-3.31/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/diketene/wigcpp_project/wigcpp/cmake/OptionHandler.cmake:26 (enable_language)"
+      - "/home/diketene/wigcpp_project/wigcpp/CMakeLists.txt:74 (include)"
+    message: |
+      Running the Fortran compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.40
 ...

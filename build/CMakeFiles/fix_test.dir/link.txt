@@ -1,1 +1,1 @@
-/home/diketene/.myapps/gcc-16.1.0/bin/g++ CMakeFiles/fix_test.dir/src/fix_test.cpp.o -o fix_test  third_party/wigxjpf-1.13/libwigxjpf.a -lgcc_s_asneeded -lgcc_s_asneeded
+/home/diketene/.myapps/gcc-16.1.0/bin/g++ CMakeFiles/fix_test.dir/src/fix_test.cpp.o -o fix_test  third_party/wigxjpf-1.13/libwigxjpf.a

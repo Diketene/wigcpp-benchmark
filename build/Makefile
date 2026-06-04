@@ -130,6 +130,19 @@ fix_test/fast:
 .PHONY : fix_test/fast
 
 #=============================================================================
+# Target rules for targets named correctness
+
+# Build rule for target.
+correctness: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correctness
+.PHONY : correctness
+
+# fast build rule for target.
+correctness/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/build
+.PHONY : correctness/fast
+
+#=============================================================================
 # Target rules for targets named wigxjpf
 
 # Build rule for target.
@@ -141,6 +154,69 @@ wigxjpf: cmake_check_build_system
 wigxjpf/fast:
 	$(MAKE) $(MAKESILENT) -f third_party/wigxjpf-1.13/CMakeFiles/wigxjpf.dir/build.make third_party/wigxjpf-1.13/CMakeFiles/wigxjpf.dir/build
 .PHONY : wigxjpf/fast
+
+#=============================================================================
+# Target rules for targets named wigcpp_core
+
+# Build rule for target.
+wigcpp_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wigcpp_core
+.PHONY : wigcpp_core
+
+# fast build rule for target.
+wigcpp_core/fast:
+	$(MAKE) $(MAKESILENT) -f wigcpp/CMakeFiles/wigcpp_core.dir/build.make wigcpp/CMakeFiles/wigcpp_core.dir/build
+.PHONY : wigcpp_core/fast
+
+#=============================================================================
+# Target rules for targets named wigcpp
+
+# Build rule for target.
+wigcpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wigcpp
+.PHONY : wigcpp
+
+# fast build rule for target.
+wigcpp/fast:
+	$(MAKE) $(MAKESILENT) -f wigcpp/CMakeFiles/wigcpp.dir/build.make wigcpp/CMakeFiles/wigcpp.dir/build
+.PHONY : wigcpp/fast
+
+#=============================================================================
+# Target rules for targets named fortran_interface
+
+# Build rule for target.
+fortran_interface: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fortran_interface
+.PHONY : fortran_interface
+
+# fast build rule for target.
+fortran_interface/fast:
+	$(MAKE) $(MAKESILENT) -f wigcpp/CMakeFiles/fortran_interface.dir/build.make wigcpp/CMakeFiles/fortran_interface.dir/build
+.PHONY : fortran_interface/fast
+
+src/correctness.o: src/correctness.cpp.o
+.PHONY : src/correctness.o
+
+# target to build an object file
+src/correctness.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/src/correctness.cpp.o
+.PHONY : src/correctness.cpp.o
+
+src/correctness.i: src/correctness.cpp.i
+.PHONY : src/correctness.i
+
+# target to preprocess a source file
+src/correctness.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/src/correctness.cpp.i
+.PHONY : src/correctness.cpp.i
+
+src/correctness.s: src/correctness.cpp.s
+.PHONY : src/correctness.s
+
+# target to generate assembly for a file
+src/correctness.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/src/correctness.cpp.s
+.PHONY : src/correctness.cpp.s
 
 src/fix_test.o: src/fix_test.cpp.o
 .PHONY : src/fix_test.o
@@ -174,8 +250,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... correctness"
 	@echo "... fix_test"
+	@echo "... fortran_interface"
+	@echo "... wigcpp"
+	@echo "... wigcpp_core"
 	@echo "... wigxjpf"
+	@echo "... src/correctness.o"
+	@echo "... src/correctness.i"
+	@echo "... src/correctness.s"
 	@echo "... src/fix_test.o"
 	@echo "... src/fix_test.i"
 	@echo "... src/fix_test.s"
