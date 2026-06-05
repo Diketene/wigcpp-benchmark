@@ -1,2 +1,0 @@
-/usr/bin/ar qc libwigxjpf.a CMakeFiles/wigxjpf.dir/src/prime_factor.c.o CMakeFiles/wigxjpf.dir/src/calc.c.o CMakeFiles/wigxjpf.dir/src/trivial_zero.c.o CMakeFiles/wigxjpf.dir/src/c_wrap.c.o CMakeFiles/wigxjpf.dir/src/fortran_wrap.c.o CMakeFiles/wigxjpf.dir/src/wigxjpf_error.c.o
-/usr/bin/ranlib libwigxjpf.a
