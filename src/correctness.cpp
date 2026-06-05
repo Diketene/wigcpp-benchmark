@@ -41,29 +41,75 @@ auto correctness_3j(int max_two_j) {
   return ulp_count;
 }
 
-auto correctness_6j(int max_two_j){
-  wigcpp::ensure_global(max_two_j , 6);
+auto correctness_6j(int max_two_j) {
+  wigcpp::ensure_global(max_two_j, 6);
   std::vector<std::uint64_t> ulp_count;
   ulp_count.reserve(10);
-  for(int two_j1 = 0; two_j1 <= max_two_j; two_j1 += 2){
-    for(int two_j2 = 0; two_j2 <= max_two_j; two_j2 += 2){
-      for(int two_j3 = 0; two_j3 <= max_two_j; two_j3 += 2){
-        for(int two_j4 = 0; two_j4 <= max_two_j; two_j4 += 2){
-          for(int two_j5 = 0; two_j5 <= max_two_j; two_j5 += 2){
-            for(int two_j6 = 0; two_j6 <= max_two_j; two_j6 += 2) {
+  for (int two_j1 = 0; two_j1 <= max_two_j; two_j1 += 2) {
+    for (int two_j2 = 0; two_j2 <= max_two_j; two_j2 += 2) {
+      for (int two_j3 = 0; two_j3 <= max_two_j; two_j3 += 2) {
+        for (int two_j4 = 0; two_j4 <= max_two_j; two_j4 += 2) {
+          for (int two_j5 = 0; two_j5 <= max_two_j; two_j5 += 2) {
+            for (int two_j6 = 0; two_j6 <= max_two_j; two_j6 += 2) {
               auto res_wigcpp = wigcpp::six_j(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6);
               auto res_wigxjpf = wig6jj(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6);
-              if(res_wigcpp == 0.0 && res_wigxjpf == 0.0){
+              if (res_wigcpp == 0.0 && res_wigxjpf == 0.0) {
                 continue;
-              }else if((res_wigcpp == 0.0 && res_wigxjpf != 0.0) || (res_wigcpp != 0.0 && res_wigxjpf == 0.0))[[unlikely]]{
-                std::cout << std::format("result of wigcpp and result of wigxjpf is not both 0. Error occurred in 6j({}, {}, {}, {}, {}, {}). Aborted.\n", two_j1, two_j2, two_j3, two_j4, two_j5, two_j6);
+              } else if ((res_wigcpp == 0.0 && res_wigxjpf != 0.0) || (res_wigcpp != 0.0 && res_wigxjpf == 0.0))
+                  [[unlikely]] {
+                std::cout << std::format("result of wigcpp and result of wigxjpf is not both 0. Error occurred in "
+                                         "6j({}, {}, {}, {}, {}, {}). Aborted.\n",
+                                         two_j1, two_j2, two_j3, two_j4, two_j5, two_j6);
                 std::abort();
               }
               auto ulp = ulp_distance(res_wigcpp, res_wigxjpf);
-              if(ulp >= ulp_count.size()){
+              if (ulp >= ulp_count.size()) {
                 ulp_count.resize(ulp + 1, 0);
               }
               ++ulp_count[ulp];
+            }
+          }
+        }
+      }
+    }
+  }
+  return ulp_count;
+}
+
+auto correctness_9j(int max_two_j) {
+  wigcpp::ensure_global(max_two_j, 9);
+  std::vector<std::uint64_t> ulp_count;
+  ulp_count.reserve(10);
+  for (int two_j1 = 0; two_j1 < max_two_j; two_j1 += 2) {
+    for (int two_j2 = 0; two_j2 < max_two_j; two_j2 += 2) {
+      for (int two_j3 = 0; two_j3 < max_two_j; two_j3 += 2) {
+        for (int two_j4 = 0; two_j4 < max_two_j; two_j4 += 2) {
+          for (int two_j5 = 0; two_j5 < max_two_j; two_j5 += 2) {
+            for (int two_j6 = 0; two_j6 < max_two_j; two_j6 += 2) {
+              for (int two_j7 = 0; two_j7 < max_two_j; two_j7 += 2) {
+                for (int two_j8 = 0; two_j8 < max_two_j; two_j8 += 2) {
+                  for (int two_j9 = 0; two_j9 < max_two_j; two_j9 += 2) {
+                    auto res_wigcpp =
+                        wigcpp::nine_j(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
+                    auto res_wigxjpf = wig9jj(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
+                    if (res_wigcpp == 0.0 && res_wigxjpf == 0.0) {
+                      continue;
+                    } else if ((res_wigcpp == 0.0 && res_wigxjpf != 0.0) || (res_wigcpp != 0.0 && res_wigxjpf == 0.0))
+                        [[unlikely]] {
+                      std::cout << std::format(
+                          "result of wigcpp and result of wigxjpf is not both 0. Error occurred in "
+                          "9j({}, {}, {}, {}, {}, {}, {}, {}, {}). Aborted.\n",
+                          two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
+                      std::abort();
+                    }
+                    auto ulp = ulp_distance(res_wigcpp, res_wigxjpf);
+                    if (ulp >= ulp_count.size()) {
+                      ulp_count.resize(ulp + 1, 0);
+                    }
+                    ++ulp_count[ulp];
+                  }
+                }
+              }
             }
           }
         }
@@ -90,8 +136,11 @@ auto main(void) -> int {
   std::cout << std::format("result of 3j correctness test:\n");
   print_ulp_stat(result);
 
-  result = correctness_6j(20);
+  result = correctness_6j(30);
   std::cout << std::format("result of 6j correctness test:\n");
   print_ulp_stat(result);
 
+  result = correctness_9j(12);
+  std::cout << std::format("result of 9j correctness test:\n");
+  print_ulp_stat(result);
 }
