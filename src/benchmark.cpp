@@ -3,6 +3,49 @@
 #include <chrono>
 #include <cstdint>
 #include <cstdlib>
+#include <string>
+#include "nlohmann/json.hpp"
+
+using json = nlohmann::json;
+
+struct GitInfoWithBenchmarkResult {
+  std::string commit;
+  bool dirty = false;
+
+  std::uint64_t calls = 0;
+  double elapsed_sec = 0.0;
+
+  double ns_per_call() {
+    return calls ? elapsed_sec / calls * 1e9 : 0.0;
+  }
+};
+
+struct BenchmarkResult {
+  std::string timestamp;
+
+  std::string symbol;
+  int max_two_j = 0;
+
+  GitInfoWithBenchmarkResult wigcpp_result;
+  GitInfoWithBenchmarkResult wixjpf_result;
+};
+
+void to_json(json &j, const GitInfoWithBenchmarkResult &r) {
+  j = json::object();
+  j["commit"] = r.commit;
+  j["dirty"] = r.dirty;
+  j["calls"] = r.calls;
+  j["elapsed_sec"] = r.elapsed_sec;
+}
+
+void to_json(json &j, const BenchmarkResult &r) {
+  j = json::object();
+  j["timestamp"] = r.timestamp;
+  j["symbol"] = r.symbol;
+  j["max_two_j"] = r.max_two_j;
+  j["wigcpp"] = r.wigcpp_result;
+  j["wigxjpf"] = r.wixjpf_result;
+}
 
 template <typename F> double benchmark(F &&func, std::uint64_t &total_calls) {
   using clock = std::chrono::high_resolution_clock;
@@ -132,7 +175,8 @@ auto benchmark_9j(int max_two_j) {
                     for (int two_j7 = 0; two_j7 <= max_two_j; ++two_j7) {
                       for (int two_j8 = 0; two_j8 <= max_two_j; ++two_j8) {
                         for (int two_j9 = 0; two_j9 <= max_two_j; ++two_j9) {
-                          volatile double r = wigcpp::nine_j(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
+                          volatile double r =
+                              wigcpp::nine_j(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
                           ++calls;
                         }
                       }
@@ -163,7 +207,8 @@ auto benchmark_9j_wigxjpf(int max_two_j) {
                     for (int two_j7 = 0; two_j7 <= max_two_j; ++two_j7) {
                       for (int two_j8 = 0; two_j8 <= max_two_j; ++two_j8) {
                         for (int two_j9 = 0; two_j9 <= max_two_j; ++two_j9) {
-                          volatile double r = wig9jj(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
+                          volatile double r =
+                              wig9jj(two_j1, two_j2, two_j3, two_j4, two_j5, two_j6, two_j7, two_j8, two_j9);
                           ++calls;
                         }
                       }
@@ -178,4 +223,15 @@ auto benchmark_9j_wigxjpf(int max_two_j) {
       calls);
 
   return std::make_pair(elaspsed, calls);
+}
+
+auto main() -> int {
+  wig_table_init(2 * 200, 9);
+  wig_temp_init(2 * 200);
+
+  //===== 3j benchmark ======
+  std::pair stat = benchmark_3j(25);
+
+  wig_table_free();
+  wig_temp_free();
 }
