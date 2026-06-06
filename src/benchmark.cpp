@@ -3,6 +3,7 @@
 #include <chrono>
 #include <cstdint>
 #include <cstdlib>
+#include <iostream>
 #include <string>
 #include "nlohmann/json.hpp"
 
@@ -12,8 +13,8 @@ struct GitInfoWithBenchmarkResult {
   std::string commit;
   bool dirty = false;
 
-  std::uint64_t calls = 0;
   double elapsed_sec = 0.0;
+  std::uint64_t calls = 0;
 
   double ns_per_call() {
     return calls ? elapsed_sec / calls * 1e9 : 0.0;
@@ -225,12 +226,34 @@ auto benchmark_9j_wigxjpf(int max_two_j) {
   return std::make_pair(elaspsed, calls);
 }
 
+std::string now_timestamp() {
+  using namespace std::chrono;
+  auto now = system_clock::now();
+  return std::format("{:%Y-%m-%d_%H-%M-%S}", now);
+}
+
 auto main() -> int {
   wig_table_init(2 * 200, 9);
   wig_temp_init(2 * 200);
 
   //===== 3j benchmark ======
-  std::pair stat = benchmark_3j(25);
+  int max_two_j_3j = 25;
+  std::pair stat = benchmark_3j(max_two_j_3j);
+  auto res_wigcpp = GitInfoWithBenchmarkResult("123123", false, stat.first, stat.second);
+  stat = benchmark_3j_wigxjpf(max_two_j_3j);
+  auto res_wigxjpf = GitInfoWithBenchmarkResult("v1.13.0", false, stat.first, stat.second);
+  auto data = BenchmarkResult(now_timestamp(), "3j", max_two_j_3j, res_wigcpp, res_wigxjpf);
+
+  json j;
+  to_json(j, data);
+
+  std::cout << j << '\n';
+
+  std::cout << std::format(
+  "3j: wigcpp {:.2f} ns/call | wigxjpf {:.2f} ns/call\n",
+  res_wigcpp.ns_per_call(),
+  res_wigxjpf.ns_per_call()
+);
 
   wig_table_free();
   wig_temp_free();
