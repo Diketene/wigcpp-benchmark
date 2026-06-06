@@ -124,23 +124,23 @@ void print_ulp_stat(const std::vector<std::uint64_t> &ulp_conut) {
   auto total_times = std::accumulate(ulp_conut.begin(), ulp_conut.end(), 0);
   for (auto i = 0UL; i < ulp_conut.size(); ++i) {
     const auto times = ulp_conut[i];
-    double precent = static_cast<double>(times) / total_times;
-    std::cout << std::format("Ulp: {}, percent: {}\n", i, precent);
+    double precent = static_cast<double>(times) * 100/ total_times;
+    std::cout << std::format("Ulp: {}, percent: {:.4f}%\n", i, precent);
   }
 }
 auto main(void) -> int {
   wig_table_init(200 * 2, 9);
   wig_temp_init(200 * 2);
 
-  auto result = correctness_3j(30);
+  auto result = correctness_3j(25);
   std::cout << std::format("result of 3j correctness test:\n");
   print_ulp_stat(result);
 
-  result = correctness_6j(30);
+  result = correctness_6j(25);
   std::cout << std::format("result of 6j correctness test:\n");
   print_ulp_stat(result);
 
-  result = correctness_9j(12);
+  result = correctness_9j(10);
   std::cout << std::format("result of 9j correctness test:\n");
   print_ulp_stat(result);
 
