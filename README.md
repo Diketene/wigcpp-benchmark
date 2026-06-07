@@ -13,10 +13,11 @@ Here lists the purpose of each source file.
 
 |file|purpose|
 |:-:|:-:|
-|`fix_test.cpp`|provides true values calculated by wigxjpf which are consumed by wigcpp's test|
-|`correctness.cpp`|provides the correctness tests between wigcpp and wigxjpf| 
+|`src/fix_test.cpp`|provides true values calculated by wigxjpf which are consumed by wigcpp's test|
+|`src/correctness.cpp`|provides the correctness tests between wigcpp and wigxjpf| 
+|`src/baseline.cpp`|provides benchmark baseline test|
 
 </div>
 
 ## What's More
-This repository vendors wigxjpf 1.13. The [`CMakeLists.txt`](third_party/wigxjpf-1.13/CMakeLists.txt) of wigxjpf was modefied by simply adding `cmake_minimum_required` and `project`.
+This repository vendors wigxjpf 1.13. The [`CMakeLists.txt`](third_party/wigxjpf-1.13/CMakeLists.txt) of wigxjpf was modefied by simply adding `cmake_minimum_required` and `project`. [nlohmann json](https://github.com/nlohmann/json) is used to build this project.
