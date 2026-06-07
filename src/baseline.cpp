@@ -1,12 +1,16 @@
 #include "wigcpp/wigcpp.hpp"
 #include "wigxjpf.h"
+#include "benchmark_utils.hpp"
 #include <chrono>
 #include <cstdint>
 #include <cstdlib>
+#include <filesystem>
+#include <fstream>
 #include <iostream>
 #include <string>
 #include "nlohmann/json.hpp"
 
+using namespace wigcpp::benchmark;
 using json = nlohmann::json;
 
 struct GitInfoWithBenchmarkResult {
@@ -15,9 +19,15 @@ struct GitInfoWithBenchmarkResult {
 
   double elapsed_sec = 0.0;
   std::uint64_t calls = 0;
+  double ns_call = 0.0;
 
   double ns_per_call() {
     return calls ? elapsed_sec / calls * 1e9 : 0.0;
+  }
+
+  GitInfoWithBenchmarkResult(const std::string &commit, bool dirty, double elapsed_sec, std::uint64_t calls)
+      : commit(commit), dirty(dirty), elapsed_sec(elapsed_sec), calls(calls) {
+    ns_call = ns_per_call();
   }
 };
 
@@ -37,6 +47,7 @@ void to_json(json &j, const GitInfoWithBenchmarkResult &r) {
   j["dirty"] = r.dirty;
   j["calls"] = r.calls;
   j["elapsed_sec"] = r.elapsed_sec;
+  j["ns_per_call"] = r.ns_call;
 }
 
 void to_json(json &j, const BenchmarkResult &r) {
@@ -48,22 +59,14 @@ void to_json(json &j, const BenchmarkResult &r) {
   j["wigxjpf"] = r.wixjpf_result;
 }
 
-template <typename F> double benchmark(F &&func, std::uint64_t &total_calls) {
-  using clock = std::chrono::high_resolution_clock;
-  auto start = clock::now();
-
-  func(total_calls);
-
-  auto end = clock::now();
-  return std::chrono::duration<double>(end - start).count();
-}
+constexpr int bench_num = 10;
 
 auto benchmark_3j(int max_two_j) {
   wigcpp::ensure_global(2 * max_two_j, 3);
 
   std::uint64_t calls = 0;
 
-  auto elapsed = benchmark(
+  auto elapsed = benchmark_median<bench_num>(
       [&](std::uint64_t &calls) {
         for (int two_j1 = 0; two_j1 <= max_two_j; ++two_j1) {
           for (int two_j2 = 0; two_j2 <= max_two_j; ++two_j2) {
@@ -87,7 +90,7 @@ auto benchmark_3j(int max_two_j) {
 auto benchmark_3j_wigxjpf(int max_two_j) {
   std::uint64_t calls = 0;
 
-  auto elapsed = benchmark(
+  auto elapsed = benchmark_median<bench_num>(
       [&](std::uint64_t &calls) {
         for (int two_j1 = 0; two_j1 <= max_two_j; ++two_j1) {
           for (int two_j2 = 0; two_j2 <= max_two_j; ++two_j2) {
@@ -113,7 +116,7 @@ auto benchmark_6j(int max_two_j) {
 
   std::uint64_t calls = 0;
 
-  auto elaspsed = benchmark(
+  auto elaspsed = benchmark_median<bench_num>(
       [&](std::uint64_t &calls) {
         for (int two_j1 = 0; two_j1 <= max_two_j; ++two_j1) {
           for (int two_j2 = 0; two_j2 <= max_two_j; ++two_j2) {
@@ -138,7 +141,7 @@ auto benchmark_6j(int max_two_j) {
 auto benchmark_6j_wigxjpf(int max_two_j) {
   std::uint64_t calls = 0;
 
-  auto elaspsed = benchmark(
+  auto elaspsed = benchmark_median<bench_num>(
       [&](std::uint64_t &calls) {
         for (int two_j1 = 0; two_j1 <= max_two_j; ++two_j1) {
           for (int two_j2 = 0; two_j2 <= max_two_j; ++two_j2) {
@@ -165,7 +168,7 @@ auto benchmark_9j(int max_two_j) {
 
   std::uint64_t calls = 0;
 
-  auto elaspsed = benchmark(
+  auto elaspsed = benchmark_median<bench_num>(
       [&](std::uint64_t &calls) {
         for (int two_j1 = 0; two_j1 <= max_two_j; ++two_j1) {
           for (int two_j2 = 0; two_j2 <= max_two_j; ++two_j2) {
@@ -197,7 +200,7 @@ auto benchmark_9j(int max_two_j) {
 auto benchmark_9j_wigxjpf(int max_two_j) {
   std::uint64_t calls = 0;
 
-  auto elaspsed = benchmark(
+  auto elaspsed = benchmark_median<bench_num>(
       [&](std::uint64_t &calls) {
         for (int two_j1 = 0; two_j1 <= max_two_j; ++two_j1) {
           for (int two_j2 = 0; two_j2 <= max_two_j; ++two_j2) {
@@ -232,6 +235,52 @@ std::string now_timestamp() {
   return std::format("{:%Y-%m-%d_%H-%M-%S}", now);
 }
 
+bool ensure_directory(const std::string &filepath) {
+  namespace fs = std::filesystem;
+
+  fs::path p(filepath);
+  fs::path dir = p.has_extension() ? p.parent_path() : p;
+
+  if (dir.empty()) {
+    return true;
+  }
+
+  std::error_code ec;
+
+  if (!fs::exists(dir, ec)) {
+    return fs::create_directories(dir, ec);
+  }
+  return true;
+}
+
+bool save_json(const json &j, const std::string &path, int indent = 4) {
+  namespace fs = std::filesystem;
+
+  if (!ensure_directory(path)) {
+    return false;
+  }
+
+  fs::path dir = fs::path(path);
+  std::string file_name = "benchmark_" + now_timestamp() + ".json";
+  fs::path full_path = dir / file_name;
+
+  std::ofstream ofs(full_path, std::ios::trunc | std::ios::binary);
+
+  if (!ofs.is_open()) {
+    return false;
+  }
+
+  try {
+    ofs << j.dump(indent, ' ', false, json::error_handler_t::replace);
+  } catch (...) {
+    return false;
+  }
+
+  ofs.flush();
+
+  return ofs.good();
+}
+
 auto main() -> int {
   wig_table_init(2 * 200, 9);
   wig_temp_init(2 * 200);
@@ -239,22 +288,58 @@ auto main() -> int {
   //===== 3j benchmark ======
   int max_two_j_3j = 25;
   std::pair stat = benchmark_3j(max_two_j_3j);
-  auto res_wigcpp = GitInfoWithBenchmarkResult("123123", false, stat.first, stat.second);
+  auto res_wigcpp = GitInfoWithBenchmarkResult(WIGCPP_GIT_COMMIT, WIGCPP_GIT_DIRTY, stat.first, stat.second);
   stat = benchmark_3j_wigxjpf(max_two_j_3j);
   auto res_wigxjpf = GitInfoWithBenchmarkResult("v1.13.0", false, stat.first, stat.second);
   auto data = BenchmarkResult(now_timestamp(), "3j", max_two_j_3j, res_wigcpp, res_wigxjpf);
 
-  json j;
-  to_json(j, data);
+  json j1;
+  to_json(j1, data);
 
-  std::cout << j << '\n';
+  std::cout << std::format("3j: wigcpp {:.2f} ns/call | wigxjpf {:.2f} ns/call\n", res_wigcpp.ns_per_call(),
+                           res_wigxjpf.ns_per_call());
 
-  std::cout << std::format(
-  "3j: wigcpp {:.2f} ns/call | wigxjpf {:.2f} ns/call\n",
-  res_wigcpp.ns_per_call(),
-  res_wigxjpf.ns_per_call()
-);
+  //===== 6j benchmark ======
+  int max_two_j_6j = 20;
+  stat = benchmark_6j(max_two_j_6j);
+  res_wigcpp = GitInfoWithBenchmarkResult(WIGCPP_GIT_COMMIT, WIGCPP_GIT_DIRTY, stat.first, stat.second);
+  stat = benchmark_6j_wigxjpf(max_two_j_6j);
+  res_wigxjpf = GitInfoWithBenchmarkResult("v1.13.0", false, stat.first, stat.second);
+  data = BenchmarkResult(now_timestamp(), "6j", max_two_j_6j, res_wigcpp, res_wigxjpf);
+
+  json j2;
+  to_json(j2, data);
+
+  std::cout << std::format("6j: wigcpp {:.2f} ns/call | wigxjpf {:.2f} ns/call\n", res_wigcpp.ns_per_call(),
+                           res_wigxjpf.ns_per_call());
+
+  //===== 9j benchmark ======
+  int max_two_j_9j = 6;
+  stat = benchmark_9j(max_two_j_9j);
+  res_wigcpp = GitInfoWithBenchmarkResult(WIGCPP_GIT_COMMIT, WIGCPP_GIT_DIRTY, stat.first, stat.second);
+  stat = benchmark_9j_wigxjpf(max_two_j_9j);
+  res_wigxjpf = GitInfoWithBenchmarkResult("v1.13.0", false, stat.first, stat.second);
+  data = BenchmarkResult(now_timestamp(), "9j", max_two_j_6j, res_wigcpp, res_wigxjpf);
+
+  json j3;
+  to_json(j3, data);
+
+  std::cout << std::format("9j: wigcpp {:.2f} ns/call | wigxjpf {:.2f} ns/call\n", res_wigcpp.ns_per_call(),
+                           res_wigxjpf.ns_per_call());
 
   wig_table_free();
   wig_temp_free();
+
+  // ===== output ======
+
+  json arr = json::array();
+  arr.push_back(j1);
+  arr.push_back(j2);
+  arr.push_back(j3);
+
+  if (WIGCPP_GIT_DIRTY) {
+    std::cerr << "[benchmark] WARNING: wigcpp's git tree is dirty.\n";
+  }
+
+  save_json(arr, "./logs/baseline");
 }
