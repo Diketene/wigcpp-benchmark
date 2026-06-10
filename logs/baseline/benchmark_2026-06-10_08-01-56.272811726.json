@@ -1,0 +1,59 @@
+[
+    {
+        "max_two_j": 25,
+        "symbol": "3j",
+        "timestamp": "2026-06-10_08-01-26.019505479",
+        "wigcpp": {
+            "calls": 12673466,
+            "commit": "a4a6274c66e28f4ce059e6d09616a52c1c4aa0da",
+            "dirty": false,
+            "elapsed_sec": 0.494393114,
+            "ns_per_call": 39.010095107368414
+        },
+        "wigxjpf": {
+            "calls": 12673466,
+            "commit": "v1.13.0",
+            "dirty": false,
+            "elapsed_sec": 0.355582401,
+            "ns_per_call": 28.05723398792406
+        }
+    },
+    {
+        "max_two_j": 20,
+        "symbol": "6j",
+        "timestamp": "2026-06-10_08-01-47.610882845",
+        "wigcpp": {
+            "calls": 85766121,
+            "commit": "a4a6274c66e28f4ce059e6d09616a52c1c4aa0da",
+            "dirty": false,
+            "elapsed_sec": 1.29097463,
+            "ns_per_call": 15.052267899582402
+        },
+        "wigxjpf": {
+            "calls": 85766121,
+            "commit": "v1.13.0",
+            "dirty": false,
+            "elapsed_sec": 0.869135891,
+            "ns_per_call": 10.133790369276465
+        }
+    },
+    {
+        "max_two_j": 20,
+        "symbol": "9j",
+        "timestamp": "2026-06-10_08-01-56.272469281",
+        "wigcpp": {
+            "calls": 40353607,
+            "commit": "a4a6274c66e28f4ce059e6d09616a52c1c4aa0da",
+            "dirty": false,
+            "elapsed_sec": 0.495963173,
+            "ns_per_call": 12.290429774964105
+        },
+        "wigxjpf": {
+            "calls": 40353607,
+            "commit": "v1.13.0",
+            "dirty": false,
+            "elapsed_sec": 0.366757872,
+            "ns_per_call": 9.08860196809668
+        }
+    }
+]
