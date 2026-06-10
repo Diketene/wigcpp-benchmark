@@ -270,11 +270,7 @@ bool save_json(const json &j, const std::string &path, int indent = 4) {
     return false;
   }
 
-  try {
-    ofs << j.dump(indent, ' ', false, json::error_handler_t::replace);
-  } catch (...) {
-    return false;
-  }
+  ofs << j.dump(indent, ' ', false, json::error_handler_t::replace);
 
   ofs.flush();
 
